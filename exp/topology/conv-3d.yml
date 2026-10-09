@@ -1,0 +1,4 @@
+topology: [ Ring, FullyConnected, Switch ]
+npus_count: [ 16, 8, 4 ]
+bandwidth: [ 200.0, 100.0, 50.0]
+latency: [ 400.0, 400.0, 600.0]  # ns — Ring/FC: NVSwitch scale-up (DGX A100), Switch: InfiniBand HDR scale-out

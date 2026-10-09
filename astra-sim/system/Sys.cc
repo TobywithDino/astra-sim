@@ -966,6 +966,22 @@ CollectivePhase Sys::generate_collective_phase(
     InjectionPolicy injection_policy,
     CollectiveImpl* collective_impl,
     CommunicatorGroup* comm_group) {
+
+    /*
+    checking if user defined collective algorithm array is loaded correctly.
+    
+        
+
+    */
+
+    if(this->id == 0){        
+        LoggerFactory::get_logger("debug")->info("phase: collective_type={} impl_type={}",
+            static_cast<int>(collective_type),
+            static_cast<int>(collective_impl->type)
+        );
+    }
+
+
     if (collective_impl->type == CollectiveImplType::Ring ||
         collective_impl->type == CollectiveImplType::OneRing) {
         CollectivePhase vn(this, queue_id,
@@ -1175,6 +1191,12 @@ void Sys::schedule(int num) {
 }
 
 void Sys::proceed_to_next_vnet_baseline(StreamBaseline* stream) {
+    if (this->id == 0) {
+        LoggerFactory::get_logger("debug")->info(
+            "chunk finished current dim, moving to next: tick={} steps_finished={}",
+            Sys::boostedTick(), stream->steps_finished);
+    }
+    
     int previous_vnet = stream->current_queue_id;
     if (stream->steps_finished == 1) {
         first_phase_streams--;

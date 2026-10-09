@@ -32,3 +32,16 @@ runs
 
 # python cache
 __pycache__/
+
+# VS Code CMake Tools output
+build/.cmake/
+build/CMakeCache.txt
+build/CMakeFiles/
+build/_deps/
+build/extern
+
+# Claude settings
+.claude/
+.mcp.json
+CLAUDE.md
+overview.md

@@ -29,3 +29,6 @@ build/astra_htsim/build/
 
 # runs
 runs
+
+# python cache
+__pycache__/

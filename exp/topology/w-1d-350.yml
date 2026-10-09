@@ -1,0 +1,4 @@
+topology: [ Switch ]
+npus_count: [ 512 ]
+bandwidth: [ 350.0]
+latency: [ 20.0]  # ns — on-wafer Si-IF fabric (Pal et al., HPCA'19), inter-die link <30ps + switch logic overhead

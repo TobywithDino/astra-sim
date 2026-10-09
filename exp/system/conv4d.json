@@ -1,0 +1,22 @@
+{
+    "scheduling-policy": "LIFO",
+    "endpoint-delay": 10,
+    "active-chunks-per-dimension": 1,
+    "preferred-dataset-splits": 4,
+    "all-reduce-implementation": [
+        "ring",
+        "direct",
+        "ring",
+        "halvingDoubling"
+    ],
+    "all-to-all-implementation": [
+        "ring",
+        "direct",
+        "ring",
+        "direct"
+    ],
+    "collective-optimization": "localBWAware",
+    "boost-mode": 0,
+    "roofline-enabled": 0,
+    "peak-perf": 234
+}

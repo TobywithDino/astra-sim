@@ -1,0 +1,4 @@
+topology: [ Switch, Switch ]
+npus_count: [ 32, 16 ]
+bandwidth: [ 250.0, 250.0]
+latency: [ 20.0, 20.0]  # ns — both dims are on-wafer Si-IF fabric, same medium as W-1D

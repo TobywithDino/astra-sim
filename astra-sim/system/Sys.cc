@@ -185,6 +185,7 @@ Sys::Sys(int id,
     this->offline_greedy = nullptr;
     this->intra_dimension_scheduling = IntraDimensionScheduling::FIFO;
     this->inter_dimension_scheduling = InterDimensionScheduling::Ascending;
+    // this->inter_dimension_scheduling = InterDimensionScheduling::OfflineGreedy;
     this->round_robin_inter_dimension_scheduler = 0;
     this->active_chunks_per_dimension = 1;
     this->priority_counter = 0;

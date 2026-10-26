@@ -44,4 +44,6 @@ build/extern
 .claude/
 .mcp.json
 CLAUDE.md
-overview.md
+
+# ScaleSim output csv files
+scalesim_result/

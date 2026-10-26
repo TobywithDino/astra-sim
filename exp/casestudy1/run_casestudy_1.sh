@@ -11,10 +11,10 @@
 set -e
 
 SCRIPT_DIR=$(dirname "$(realpath "$0")")
-REPO_ROOT="${SCRIPT_DIR:?}/.."
+REPO_ROOT="${SCRIPT_DIR:?}/../.."
 BIN="${REPO_ROOT:?}/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Unaware"
 
-# Pick which workload to run: ./run_baseline.sh [gpt3|transformer1t|dlrm|all_reduce]
+# Pick which workload to run: ./run_casestudy_1.sh [gpt3|transformer1t|dlrm|all_reduce]
 # (defaults to gpt3 if no argument is given).
 WORKLOAD_NAME="${1:-gpt3}"
 case "$WORKLOAD_NAME" in

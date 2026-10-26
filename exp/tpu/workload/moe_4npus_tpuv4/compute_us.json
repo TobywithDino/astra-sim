@@ -1,0 +1,46 @@
+{
+    "unit": "microseconds (integer), one list per NPU in SCALE-Sim layer order L1..L8",
+    "source": "SCALE-Sim COMPUTE_REPORT.csv Total Cycles / 1050 MHz",
+    "npu_compute_us": {
+        "0": [
+            7990,
+            5,
+            250,
+            7990,
+            3306,
+            3582,
+            3112,
+            4380
+        ],
+        "1": [
+            7990,
+            5,
+            250,
+            7990,
+            3109,
+            3131,
+            3108,
+            3108
+        ],
+        "2": [
+            7990,
+            5,
+            250,
+            7990,
+            16730,
+            3379,
+            3106,
+            3106
+        ],
+        "3": [
+            7990,
+            5,
+            250,
+            7990,
+            3100,
+            3100,
+            3099,
+            3099
+        ]
+    }
+}

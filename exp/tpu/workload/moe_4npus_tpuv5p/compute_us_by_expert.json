@@ -1,0 +1,15 @@
+{
+    "unit": "microseconds (integer)",
+    "source": "SCALE-Sim COMPUTE_REPORT.csv Total Cycles / 1750 MHz",
+    "attention_us": [468, 3, 6, 468],
+    "expert_us_by_tokens": {
+        "821": [826, 650],
+        "466": [410, 516],
+        "300": [407, 409],
+        "199": [405, 1416],
+        "129": [404, 404],
+        "77": [403, 403],
+        "41": [402, 402],
+        "15": [402, 402]
+    }
+}

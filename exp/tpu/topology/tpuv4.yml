@@ -1,0 +1,5 @@
+# TPU v4 tray
+topology: [ Ring ]
+npus_count: [ 4 ]
+bandwidth: [ 50.0 ]
+latency: [ 1000.0 ] # assumed value
